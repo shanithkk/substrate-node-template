@@ -171,6 +171,10 @@ default-features = false
 tag = 'v2.0.0-rc6'
 version = '2.0.0-rc6'
 
+[dependencies.test-pallet]
+default-features = false
+path = '../pallets/test-pallet'
+
 [features]
 default = ['std']
 std = [
@@ -201,6 +205,7 @@ std = [
     'sp-version/std',
     'template/std',
     'pallet-nicks/std',
+    'test-pallet/std',
 ]
 
 [build-dependencies.wasm-builder-runner]
